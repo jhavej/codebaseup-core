@@ -3,7 +3,7 @@ import { Twitter } from "lucide-react";
 import { buttonVariants } from "ui";
 import { GitHub } from "ui/icons";
 import { siteConfig } from "@/config/site";
-import { Login } from "@/components/Navbar";
+import { Login } from "@/app/components/Navbar";
 import MainNav from "./MainNav";
 import { ThemeToggle } from "./ThemeToggle";
 

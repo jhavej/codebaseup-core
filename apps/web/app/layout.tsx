@@ -3,7 +3,7 @@ import { TailwindIndicator } from "ui";
 import { fontSans } from "ui/lib/fonts";
 import { cn } from "ui/lib/utils";
 import { siteConfig } from "@/config/site";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/app/components/Navbar";
 import Providers from "./Providers";
 import "ui/styles/globals.css";
 
