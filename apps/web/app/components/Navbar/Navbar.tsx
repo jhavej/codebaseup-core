@@ -1,16 +1,41 @@
 import Link from "next/link";
-import { Twitter } from "lucide-react";
+import { Twitter, Zap } from "lucide-react";
 import { buttonVariants } from "ui";
 import { GitHub } from "ui/icons";
+import { cn } from "ui/lib/utils";
 import { siteConfig } from "@/config/site";
-import { Login } from "@/app/components/Navbar";
-import MainNav from "./MainNav";
 import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => (
-  <header className="sticky top-0 z-40 w-full border-b bg-background">
+  <header className="sticky top-0 z-40 w-full bg-transparent">
     <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-      <MainNav items={siteConfig.mainNav} />
+      <div className="flex gap-6 md:gap-10">
+        <Link href="/" className="hidden items-center space-x-2 md:flex">
+          <Zap className="h-6 w-6" />
+          <span className="hidden font-bold sm:inline-block">
+            {siteConfig.name}
+          </span>
+        </Link>
+        {siteConfig.mainNav?.length ? (
+          <nav className="hidden gap-6 md:flex">
+            {siteConfig.mainNav?.map(
+              (item, index) =>
+                item.href && (
+                  <Link
+                    key={index}
+                    href={item.href}
+                    className={cn(
+                      "flex items-center text-lg font-semibold text-muted-foreground sm:text-sm",
+                      item.disabled && "cursor-not-allowed opacity-80"
+                    )}
+                  >
+                    {item.title}
+                  </Link>
+                )
+            )}
+          </nav>
+        ) : null}
+      </div>
       <div className="flex flex-1 items-center justify-end space-x-4">
         <nav className="flex items-center space-x-1">
           <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
@@ -40,7 +65,6 @@ const Navbar = () => (
             </div>
           </Link>
           <ThemeToggle />
-          <Login />
         </nav>
       </div>
     </div>
