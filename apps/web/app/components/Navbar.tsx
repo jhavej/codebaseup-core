@@ -6,7 +6,7 @@ import { cn } from "ui/lib/utils";
 import { siteConfig } from "@/config/site";
 import { ThemeToggle } from "./ThemeToggle";
 
-const Navbar = () => (
+export const Navbar = () => (
   <header className="sticky top-0 z-40 w-full bg-transparent">
     <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
       <div className="flex gap-6 md:gap-10">

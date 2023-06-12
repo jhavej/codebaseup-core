@@ -11,6 +11,7 @@ import {
   Separator,
   buttonVariants,
 } from "ui";
+import { SubscriptionButton } from "./SubscriptionButton";
 
 interface Item {
   title: string;
@@ -173,10 +174,7 @@ const Roadmap = () => (
       </div>
     </CardContent>
     <CardFooter>
-      <Button className="w-full">
-        <BellRing className="mr-2 h-4 w-4" />
-        Subscribe to updates
-      </Button>
+      <SubscriptionButton />
     </CardFooter>
   </Card>
 );
