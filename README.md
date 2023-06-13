@@ -1,63 +1,65 @@
-# Turborepo starter
+# Turborepo Starter Pack
 
-This is an official starter Turborepo.
+This is an opinionated Javascript/Typescript monorepo starter pack built on top-notch technologies that enables you to
+focus on business logic instead of complex project setup.
 
-## Using this example
+Free. Open Source.
 
-Run the following command:
-
-```sh
-npx create-turbo@latest
-```
+Created and maintained by [@jakubhavej](https://twitter.com/jakubhavej)
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+It's based on [Turborepo](https://turbo.build/) project structure. Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `web`: a [Next.js](https://nextjs.org/) app (the main one, used for demo purposes)
+- `docs`: another [Next.js](https://nextjs.org/) app
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+A collection of reusable and **ready-to-use packages** used throughout the monorepo:
 
-### Utilities
+- `database`: powered by [Prisma](https://www.prisma.io/), the Node.js and Typescript ORM.
+- `eslint-config-custom`: [ESLing](https://eslint.org/) configurations.
+- `prettier-config`: [Prettier](https://prettier.io/) configurations.
+- `tailwind-config`: [Tailwind CSS](https://tailwindcss.com/) configurations.
+- `tsconfig`: [Typescript](https://www.typescriptlang.org/) configurations.
+- `ui`: Beautifully designed components by [shadcn/ui](https://ui.shadcn.com/). Based on [Radix](https://www.radix-ui.com/) & [Tailwind CSS](https://tailwindcss.com/) & [Lucide Icons](https://lucide.dev/). Fully customizable.
 
-This Turborepo has some additional tools already setup for you:
+A **work-in-progress packages:**
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- `tRpc`: End-to-end typesafe APIs made easy.
+- `File storage`: A tooling for uploading and storing files.
+- `Internationalization`: Translations and related management.
+- `Emailing`: Sending transactional emails in-app.
+- `Chrome extension`: A boilerplate for creating Chrome extensions using React and Typescript.
+- `Content management system (CMS)`: A headless CMS integration.
+- `Analytics`: A tooling for collecting essential insights about site usage and performance.
 
-### Build
+## Using the starter pack
 
-To build all apps and packages, run the following command:
+Clone the repository:
 
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
+```sh
+git clone git@github.com:jhavej/turbo-starter.git
 ```
 
-### Remote Caching
+Install `pnpm` and `Node v18.16.0` (preferably via [nvm](https://github.com/nvm-sh))
+
+Create a `.env.local` file based on the provided `.env.local.example` - this enables Google OAuth and a connection to a PostgreSQL database (create one e.g. on [Vercel](https://vercel.com/storage/postgres) or [Supabase](https://supabase.com/) -- both will work out of the box once connected via the environment variables)
+
+Spin up the development server:
+
+```sh
+pnpm run dev
+```
+
+### Remote Caching (optional)
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands from the project root:
 
 ```
-cd my-turborepo
 npx turbo login
 ```
 
