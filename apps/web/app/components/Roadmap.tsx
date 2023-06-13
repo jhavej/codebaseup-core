@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { BellRing, CheckCircle2, Clock4, ExternalLink } from "lucide-react";
+import { CheckCircle2, Clock4, ExternalLink } from "lucide-react";
 import {
-  Button,
   Card,
   CardContent,
   CardDescription,
@@ -90,7 +89,7 @@ const roadmapItems: Item[] = [
   },
   {
     title: "Chrome extension",
-    description: "Add new features to Chrome.",
+    description: "A boilerplate for creating Chrome extensions using React.",
     isComplete: false,
   },
   {
