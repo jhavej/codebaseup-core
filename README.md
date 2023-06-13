@@ -23,7 +23,7 @@ A collection of reusable and **ready-to-use packages** used throughout the monor
 - `prettier-config`: [Prettier](https://prettier.io/) configurations.
 - `tailwind-config`: [Tailwind CSS](https://tailwindcss.com/) configurations.
 - `tsconfig`: [Typescript](https://www.typescriptlang.org/) configurations.
-- `ui`: Beautifully designed components by [shadcn/ui](https://ui.shadcn.com/). Based on [Radix](https://www.radix-ui.com/) & [Tailwind CSS](https://tailwindcss.com/). Fully customizable.
+- `ui`: Beautifully designed components by [shadcn/ui](https://ui.shadcn.com/). Based on [Radix](https://www.radix-ui.com/) & [Tailwind CSS](https://tailwindcss.com/) & [Lucide Icons](https://lucide.dev/). Fully customizable.
 
 A **work-in-progress packages:**
 
