@@ -7,6 +7,6 @@ export const siteConfig = {
   mainNav: [],
   links: {
     twitter: "https://twitter.com/jakubhavej",
-    github: "https://github.com/jhavej",
+    github: "https://github.com/jhavej/turbo-starter",
   },
 };

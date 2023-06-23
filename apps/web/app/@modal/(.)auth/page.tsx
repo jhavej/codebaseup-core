@@ -1,6 +1,7 @@
 "use client";
 
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import {
   Button,
@@ -12,32 +13,37 @@ import {
 } from "ui";
 import { Google } from "ui/icons";
 
-interface DialogProps {
-  isActive: boolean;
-  setIsActive: Dispatch<SetStateAction<boolean>>;
-}
-
-const LoginDialog: React.FC<DialogProps> = ({ isActive, setIsActive }) => {
+const LoginDialog = () => {
   const [signInClicked, setSignInClicked] = useState(false);
+  const router = useRouter();
+
   return (
-    <Dialog open={isActive} onOpenChange={setIsActive}>
+    <Dialog
+      defaultOpen
+      onOpenChange={(isOpen) => {
+        if (!isOpen) {
+          router.back();
+        }
+      }}
+    >
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Sign in</DialogTitle>
+          <DialogTitle>Subscribe to updates</DialogTitle>
           <DialogDescription>
-            This is strictly for demo purposes - only your email and profile
-            picture will be stored.
+            <div className="py-4">
+              Get early access to new feature updates. I also share my knowledge
+              as a both software developer and solopreneur.
+            </div>
           </DialogDescription>
         </DialogHeader>
         <Button
           onClick={async () => {
             setSignInClicked(true);
             await signIn("google");
-            setIsActive(false);
           }}
           disabled={signInClicked}
         >
-          <Google className="h-5 w-5" />
+          <Google className="h-5 w-5 mr-2" />
           <p>Sign in with Google</p>
         </Button>
       </DialogContent>
