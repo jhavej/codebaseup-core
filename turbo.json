@@ -7,7 +7,12 @@
       "dependsOn": ["^db:generate", "^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "lint": {},
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
+    "lint": {
+      "dependsOn": ["topo"]
+    },
     "dev": {
       "dependsOn": ["^db:generate"],
       "cache": false,
