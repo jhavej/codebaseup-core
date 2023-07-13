@@ -5,6 +5,8 @@ focus on business logic instead of complex project setup.
 
 Free. Open Source.
 
+See the [demo](https://dub.sh/start)
+
 Created and maintained by [@jakubhavej](https://twitter.com/jakubhavej)
 
 ## What's inside?
