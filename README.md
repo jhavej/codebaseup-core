@@ -47,7 +47,7 @@ git clone git@github.com:jhavej/turbo-starter.git
 
 Install `pnpm` and `Node v18.16.0` (preferably via [nvm](https://github.com/nvm-sh))
 
-Create a `.env.local` file based on the provided `.env.local.example` - this enables Google OAuth and a connection to a PostgreSQL database (create one e.g. on [Vercel](https://vercel.com/storage/postgres) or [Supabase](https://supabase.com/) -- both will work out of the box once connected via the environment variables)
+Create a `.env.local` file based on the provided `.env.local.example` - this enables Google OAuth and a connection to a PostgreSQL database (create one e.g. on [Vercel](https://vercel.com/storage/postgres) or [Supabase](https://supabase.com/) or [Neon](https://neon.tech) -- it will work out of the box once connected via the environment variables)
 
 Install project dependencies:
 

@@ -6,7 +6,11 @@
   "license": "MIT",
   "scripts": {
     "db:generate": "prisma generate",
-    "db:push": "dotenv -e ../../.env.local prisma db push --skip-generate"
+    "db:push": "dotenv -e ../../.env.local prisma db push --skip-generate",
+    "db:migrate:dev": "dotenv -e ../../.env.local prisma migrate dev",
+    "db:migrate:reset": "dotenv -e ../../.env.local prisma migrate reset",
+    "db:migrate:deploy": "dotenv -e ../../.env.local prisma migrate deploy",
+    "db:studio": "dotenv -e ../../.env.local prisma studio"
   },
   "dependencies": {
     "@prisma/client": "^4.14.1"
