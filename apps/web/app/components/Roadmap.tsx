@@ -101,7 +101,7 @@ const roadmapItems: Item[] = [
     title: "Analytics",
     description:
       "Collecting essential insights about how visitors are using your site.",
-    isComplete: false,
+    isComplete: true,
   },
 ];
 
