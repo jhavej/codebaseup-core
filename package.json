@@ -1,0 +1,28 @@
+{
+  "name": "turbo-starter",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint --filter=web --filter=database --filter=ui",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
+    "ts": "turbo run ts",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.0",
+    "eslint": "^8.48.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "3.0.3",
+    "turbo": "^1.10.14",
+    "husky": "^8.0.0"
+  },
+  "packageManager": "pnpm@8.8.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": "18.16"
+  }
+}
