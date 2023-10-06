@@ -5,6 +5,8 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
+    "lint": "eslint .",
+    "ts": "tsc  --noEmit",
     "db:generate": "prisma generate",
     "db:push": "dotenv -e ../../.env.local prisma db push --skip-generate",
     "db:migrate:dev": "dotenv -e ../../.env.local prisma migrate dev",
@@ -13,10 +15,14 @@
     "db:studio": "dotenv -e ../../.env.local prisma studio"
   },
   "dependencies": {
-    "@prisma/client": "^4.14.1"
+    "@prisma/client": "^5.3.1"
   },
   "devDependencies": {
-    "dotenv-cli": "^7.2.1",
-    "prisma": "^4.14.1"
+    "@types/node": "^20.8.0",
+    "dotenv-cli": "^7.3.0",
+    "eslint-config-custom": "workspace:*",
+    "prisma": "^5.3.1",
+    "tsconfig": "workspace:*",
+    "typescript": "5.1.6"
   }
 }

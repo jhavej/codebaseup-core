@@ -1,4 +1,0 @@
-Sitemap: turbo-starter-web.vercel.app/sitemap.xml
-
-User-agent: *
-Disallow: /api
