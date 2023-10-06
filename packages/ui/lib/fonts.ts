@@ -1,6 +1,4 @@
-import { Inter, JetBrains_Mono } from "@next/font/google";
-
-// eslint-disable-line
+import { Inter, JetBrains_Mono } from "@next/font/google"; // eslint-disable-line
 
 export const fontSans = Inter({
   subsets: ["latin"],

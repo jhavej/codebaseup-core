@@ -1,5 +1,5 @@
 {
-  "name": "turbo-starter",
+  "name": "codebaseup-core",
   "private": true,
   "scripts": {
     "build": "turbo run build",
