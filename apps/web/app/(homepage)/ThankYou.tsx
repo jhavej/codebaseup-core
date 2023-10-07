@@ -42,7 +42,7 @@ export const ThankYou = () => {
                   </Button>
                 </Link>
                 <Link
-                  href="https://github.com/jhavej/codebaseup"
+                  href="https://github.com/jhavej/codebaseup-core"
                   target="_blank"
                 >
                   <Button size="icon" variant="ghost">
