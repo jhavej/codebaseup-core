@@ -2,7 +2,7 @@
   "setupTasks": [
     {
       "name": "Installing Dependencies",
-      "command": "pnpm install --config.auto-install-peers=false"
+      "command": "pnpm install --config.auto-install-peers=true"
     }
   ]
 }
