@@ -1,9 +1,8 @@
 {
-  "$schema": "https://codesandbox.io/schemas/tasks.json",
   "setupTasks": [
     {
       "name": "Installing Dependencies",
-      "command": "pnpm config set auto-install-peers true && pnpm install"
+      "command": "pnpm install --config.auto-install-peers=false"
     }
   ]
 }
