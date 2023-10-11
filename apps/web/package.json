@@ -32,9 +32,5 @@
     "tailwindcss": "^3.3.3",
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2"
-  },
-  "peerDependencies": {
-    "@prisma/client": ">=3",
-    "@next/eslint-plugin-next": ">=12.3.0 <14"
   }
 }

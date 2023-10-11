@@ -2,7 +2,7 @@
   "setupTasks": [
     {
       "name": "Installing Dependencies",
-      "command": "pnpm install --config.auto-install-peers=true"
+      "command": "env SHELL=$(which zsh) pnpm setup && source $HOME/.zshrc && pnpm install -g pnpm@8.8.0 && source $HOME/.zshrc && pnpm install"
     }
   ]
 }
