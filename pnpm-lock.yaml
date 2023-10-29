@@ -155,8 +155,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1(react-hook-form@7.46.2)
       '@next/font':
-        specifier: ^13.5.3
-        version: 13.5.3
+        specifier: ^14.0.0
+        version: 14.0.0
       '@radix-ui/react-accordion':
         specifier: ^1.1.2
         version: 1.1.2(@types/react-dom@18.2.8)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
@@ -720,8 +720,8 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/font@13.5.3:
-    resolution: {integrity: sha512-RniL8BuXLCtBU1chuJ/TPVT2vCA6+EdlOUEhCpMdSeInZ5/nuOShkHgLZ0QnFVbcozwK3shO5ZdqKBI5G3eMNg==}
+  /@next/font@14.0.0:
+    resolution: {integrity: sha512-E6Xg6yPYqOIbPmYkheY5qXjeJlDdwWzspU655QbJn+s0FSKOTS3b/SDKXeZxnyK9f2rTaovGRsU/KOCqZQongw==}
     dev: false
 
   /@next/swc-darwin-arm64@14.0.0:
