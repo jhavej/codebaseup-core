@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { Navbar, Providers } from "@/components";
 import { TailwindIndicator, Toaster } from "ui";
 import { fontSans } from "ui/lib/fonts";
@@ -13,11 +13,22 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
 };
+
+export function generateViewport(): Viewport {
+  return {
+    themeColor: [
+      {
+        color: "white",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        color: "black",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  };
+}
 
 interface RootLayoutProps {
   children: React.ReactNode;
