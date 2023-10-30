@@ -40,9 +40,9 @@ export const features: IFeature[] = [
   {
     title: "Next.js",
     description:
-      "Dive into Next.js 13+ (App Router) like a pro, experiencing React Server Components, route interception, and more in action.",
+      "Dive into Next.js (v14+ App Router) like a pro, experiencing React Server Components, route interception, and more in action.",
     tag: "saves 4hrs",
-    libraries: ["Next.js 13+ (App Router)"],
+    libraries: ["Next.js (v14+ App Router)"],
     category: FeatureCategory.Free,
   },
   {

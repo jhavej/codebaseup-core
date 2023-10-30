@@ -1,7 +1,7 @@
 # CodebaseUp - Core
 
-CodebaseUp is a Next.js (App Router) boilerplate that saves you 150+ hours of
-setup hassle. Experience rapid business launch, not setup fatigue.
+CodebaseUp is a Next.js (v14+ App Router) boilerplate that saves you 150+ hours
+of setup hassle. Experience rapid business launch, not setup fatigue.
 
 This Core version contains a subset of modules offered by a
 [Pro version](https://www.codebaseup.com/en/pricing) but still can get you
@@ -42,7 +42,7 @@ pnpm run lint
 pnpm run lint --filter=web
 ```
 
-**Next.js** Dive into Next.js 13+ (App Router) like a pro, experiencing React
+**Next.js** Dive into Next.js (v14+ App Router) like a pro, experiencing React
 Server Components, route interception, and more in action.
 
 **Database** Launch and share your cloud-based database swiftly and bid farewell
